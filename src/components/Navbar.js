@@ -59,7 +59,7 @@ export default Navbar;
 
 const MenuIems = styled.div`
   width: 100%;
-  background-color: antiquewhite;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,7 +86,7 @@ const MenuIems = styled.div`
 const Container = styled.div`
   height: 80px;
   width: 100%;
-  background-color: aliceblue;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -125,9 +125,15 @@ const Container = styled.div`
     justify-content: center;
     align-content: center;
     h1 {
+        font-size: 2rem;
+
       font-weight: 500;
       align-self: center;
       font-family: "Times New Roman", Times, serif;
+      @media only screen and (max-width: 360px) {
+        font-size: 1.5rem;
+       
+      }
     }
     .profileimg {
       height: 55px;
