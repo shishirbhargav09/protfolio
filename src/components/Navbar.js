@@ -121,6 +121,7 @@ function Navbar() {
 export default Navbar;
 
 const MenuIems = styled.div`
+
   width: 100%;
   background-color: white;
   display: flex;
@@ -146,13 +147,18 @@ const MenuIems = styled.div`
   }
 `;
 const Container = styled.div`
+position: sticky;
+top: 0;
   height: 80px;
   width: 100%;
   background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  box-shadow: -3px 5px 7px -2px rgba(0,0,0,0.75);
+-webkit-box-shadow: -3px 5px 7px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: -3px 5px 7px -2px rgba(0,0,0,0.75);
+z-index: 50;
   .nav_right {
     margin: 1rem;
     ul {
