@@ -11,10 +11,10 @@ function Projects() {
       <h2>Projects</h2>
       <hr />
       <p>Here you will find some of the personal projects that I created</p>
-{/* project1 */}
+      {/* project1 */}
       <div className="project">
         <div className="img">
-        <img src={img2} alt="project 1" />
+          <img src={img2} alt="project 1" />
         </div>
 
         <div className="project_desc">
@@ -30,10 +30,10 @@ function Projects() {
           </div>
         </div>
       </div>
-{/* project 2 */}
+      {/* project 2 */}
       <div className="project">
         <div className="img">
-        <img src={img5} alt="project 2" />
+          <img src={img5} alt="project 2" />
         </div>
 
         <div className="project_desc">
@@ -52,12 +52,11 @@ function Projects() {
 
       <div className="project">
         <div className="img">
-        <img src={img3} alt="project 3" />
+          <img src={img3} alt="project 3" />
         </div>
 
         <div className="project_desc">
-          <h3>
-Neoflix - A Video Streamin App</h3>
+          <h3>Neoflix - A Video Streamin App</h3>
           <p>Its a video streaming app </p>
           <div className="buttons">
             <a href="https://neoflix-shishirbhargav09.vercel.app/">
@@ -70,16 +69,17 @@ Neoflix - A Video Streamin App</h3>
         </div>
       </div>
 
-
       <div className="project">
         <div className="img">
-        <img src={img4} alt="project 4" />
+          <img src={img4} alt="project 4" />
         </div>
 
         <div className="project_desc">
           <h3>CRYPTOMANIA - Cryptocurrency App</h3>
-          <p>Cryptocurrency app that shows real time data of
-Cryptocurrencies and Listed Exchanges </p>
+          <p>
+            Cryptocurrency app that shows real time data of Cryptocurrencies and
+            Listed Exchanges{" "}
+          </p>
           <div className="buttons">
             <a href="https://crypto-mania-shishirbhargav09.vercel.app/">
               <Button>Live Demo</Button>
@@ -128,9 +128,14 @@ const Container = styled.div`
     width: 50%;
     padding: 0.5rem;
     margin: 0.5rem;
-    img{
-        height: 100%;
-        width: 100%;
+    @media only screen and (max-width: 850px) {
+        width: 90%;
+        max-width: 30rem;
+
+    }
+    img {
+      height: 100%;
+      width: 100%;
     }
   }
   .project {
@@ -141,16 +146,21 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin: 4rem 0;
     gap: 2rem;
     @media only screen and (max-width: 850px) {
-        flex-direction: column;
+      flex-direction: column;
     }
     .project_desc {
-        width: 50%;
+      width: 50%;
       margin: 1rem;
+      text-align: center;
       flex-direction: column;
+      @media only screen and (max-width: 850px) {
+        width: 90%;
+        text-align: center;
+      }
       .buttons {
         display: flex;
         justify-content: center;

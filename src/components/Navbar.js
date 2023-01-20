@@ -6,7 +6,7 @@ import {  NavLink } from "react-router-dom";
 function Navbar() {
   const [togglemenu, setTogglemenu] = useState(false);
   return (
-    <>
+    <Header>
       <Container>
         <div className="nav_left">
           <div className="profileimg">
@@ -114,14 +114,20 @@ function Navbar() {
           </ul>
         </MenuIems>
       )}
-    </>
+    </Header>
   );
 }
 
 export default Navbar;
 
+const Header = styled.div`
+position: sticky;
+top: 0;
+z-index: 555;
+`
 const MenuIems = styled.div`
-
+    position: absolute;
+    top: 80px;
   width: 100%;
   background-color: white;
   display: flex;
@@ -147,8 +153,8 @@ const MenuIems = styled.div`
   }
 `;
 const Container = styled.div`
-position: sticky;
-top: 0;
+/* position: sticky;
+top: 0; */
   height: 80px;
   width: 100%;
   background-color: white;
@@ -203,8 +209,8 @@ z-index: 50;
       }
     }
     .profileimg {
-      height: 55px;
-      width: 55px;
+      height: 50px;
+      width: 50px;
       border-radius: 50%;
       overflow: hidden;
       display: flex;
