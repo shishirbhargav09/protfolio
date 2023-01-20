@@ -43,8 +43,9 @@ const Container = styled.div`
      @media only screen and (max-width: 480px) {
  width: 110px;
     margin: 1rem 0.4rem;
-    padding: 0.2rem;
+    
     .img{
+      padding: 0.2rem;
        height: 80px;
       img {
         height: 100%;
