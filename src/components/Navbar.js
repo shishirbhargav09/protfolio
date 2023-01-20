@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import profileimg from "../assets/1.jpg";
+import profileimg from "../assets/1.webp";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
 function Navbar() {
@@ -143,6 +143,8 @@ const Container = styled.div`
       display: flex;
       align-self: center;
       margin: 1rem;
+
+      border: 2px solid #000000;
       img {
         height: 100%;
         width: 100%;
