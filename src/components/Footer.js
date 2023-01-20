@@ -21,6 +21,8 @@ export default Footer
 
 const Container = styled.div`
 width: 100%;
+position: sticky;
+top: 0;
 height: 70px;
 display: flex;
 justify-content: center;

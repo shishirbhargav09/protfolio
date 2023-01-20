@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import profileimg from "../assets/1.webp";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 function Navbar() {
   const [togglemenu, setTogglemenu] = useState(false);
   return (
@@ -16,9 +16,39 @@ function Navbar() {
         </div>
         <div className="nav_right">
           <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/projects">Projects</Link></li>
+            <li>
+              <NavLink
+                to="/"
+                style={({ isActive }) =>
+                  isActive
+                    ? {
+                        color: "#3182CE",
+                      }
+                    : {}
+                } >Home</NavLink>
+            </li>
+            <li>
+              <NavLink
+                
+                style={({ isActive }) =>
+                  isActive
+                    ? {
+                        color: "#3182CE",
+                      }
+                    : {}
+                } to="/about">About</NavLink>
+            </li>
+            <li>
+              <NavLink
+                
+                style={({ isActive }) =>
+                  isActive
+                    ? {
+                        color: "#3182CE",
+                      }
+                    : {}
+                }to="/projects">Projects</NavLink>
+            </li>
           </ul>
           {!togglemenu && (
             <AiOutlineMenu
@@ -45,9 +75,42 @@ function Navbar() {
           }}
         >
           <ul>
-          <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/projects">Projects</Link></li>
+            <li>
+              <NavLink
+                to="/"
+                style={({ isActive }) =>
+                  isActive
+                    ? {
+                        color: "#3182CE",
+                      }
+                    : {}
+                }
+              >
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                
+                style={({ isActive }) =>
+                  isActive
+                    ? {
+                        color: "#3182CE",
+                      }
+                    : {}
+                } to="/about">About</NavLink>
+            </li>
+            <li>
+              <NavLink
+                
+                style={({ isActive }) =>
+                  isActive
+                    ? {
+                        color: "#3182CE",
+                      }
+                    : {}
+                } to="/projects">Projects</NavLink>
+            </li>
           </ul>
         </MenuIems>
       )}
@@ -66,8 +129,8 @@ const MenuIems = styled.div`
   z-index: 10;
   display: none;
   @media only screen and (max-width: 1000px) {
-        display: block;
-      }
+    display: block;
+  }
 
   ul {
     list-style: none;
@@ -79,7 +142,6 @@ const MenuIems = styled.div`
       margin: 1rem 1rem;
       font-size: 1.2rem;
       font-weight: 400;
-      
     }
   }
 `;
@@ -125,14 +187,13 @@ const Container = styled.div`
     justify-content: center;
     align-content: center;
     h1 {
-        font-size: 2rem;
+      font-size: 2rem;
 
       font-weight: 500;
       align-self: center;
       font-family: "Times New Roman", Times, serif;
       @media only screen and (max-width: 360px) {
         font-size: 1.5rem;
-       
       }
     }
     .profileimg {

@@ -16,7 +16,9 @@ a{
   text-decoration: none;
 
 }
-
+a:link {
+  color: black;
+}
 
 /* visited link */
 a:visited {
@@ -26,11 +28,34 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-  color: hotpink;
+  color: #3182CE;
 }
 
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+h2 {
+  margin: 1rem;
+  font-weight: 600;
+  font-size: 2rem;
+}
+h3 {
+  margin: 1rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+hr {
+  width: 50%;
+  height: 2px;
+  background-color: #3182ce;
+}
+p {
+  width: 90%;
+  max-width: 45rem;
+  margin: 2rem;
+  font-size: large;
+  text-align: center;
+  font-size: 1.3rem;
 }
