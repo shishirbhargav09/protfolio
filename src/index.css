@@ -20,7 +20,7 @@ a{
 
 /* visited link */
 a:visited {
-  color: rgb(9, 158, 184);
+  color: black;
   text-decoration: underline;
 }
 

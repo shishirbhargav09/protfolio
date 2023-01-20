@@ -9,7 +9,10 @@ function Footer() {
         <a href='https://github.com/shishirbhargav09' >
         <AiFillGithub/>
         </a>
+        <a href="https://www.linkedin.com/in/shishir-bhargav/">
         <AiFillLinkedin/>
+
+        </a>
     </Container>
   )
 }

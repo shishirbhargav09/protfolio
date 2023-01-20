@@ -48,18 +48,25 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
 
-  height: calc(100vh - 150px);
+  /* height: calc(100vh - 150px); */
   .profileimage {
     height: 250px;
     width: 250px;
     border-radius: 50%;
+    
     overflow: hidden;
     margin: 2rem;
 
     border: 2px solid #a54583;
+    @media only screen and (max-width: 520px) {
+        height: 10rem;
+    width: 10rem;
+    }
+    
     img {
       height: 100%;
       width: 100%;
+      
       object-fit: contain;
     }
   }
@@ -68,7 +75,7 @@ const Container = styled.div`
     text-align: center;
     font-size: 2.5rem;
     padding: 0 0.5rem;
-
+    letter-spacing: 1.2;
     /* font-family: ; */
   }
   p {
