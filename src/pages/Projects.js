@@ -156,7 +156,11 @@ const Container = styled.div`
       width: 50%;
       margin: 1rem;
       text-align: center;
+      display: flex;
+    justify-content: center;
+    align-items: center;
       flex-direction: column;
+
       @media only screen and (max-width: 850px) {
         width: 90%;
         text-align: center;

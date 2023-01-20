@@ -25,6 +25,10 @@ const Container = styled.div`
  width: 150px;
  padding: 0.5rem;
  margin: 1rem;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
  box-shadow: 4px 5px 14px -2px rgba(0,0,0,0.75);
 -webkit-box-shadow: 4px 5px 14px -2px rgba(0,0,0,0.75);
 -moz-box-shadow: 4px 5px 14px -2px rgba(0,0,0,0.75);
@@ -42,6 +46,7 @@ const Container = styled.div`
 
      @media only screen and (max-width: 480px) {
  width: 110px;
+ padding: 0.5rem;
     margin: 1rem 0.4rem;
     
     .img{
