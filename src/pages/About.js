@@ -129,7 +129,7 @@ Express Js, Node Js, Mongo db.</p>
 
 export default About;
 
-const Card = styled.div``;
+
 const Container = styled.div`
   text-align: center;
   display: flex;

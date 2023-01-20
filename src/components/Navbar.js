@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import profileimg from "../assets/1.webp";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { Link, NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 function Navbar() {
   const [togglemenu, setTogglemenu] = useState(false);
   return (

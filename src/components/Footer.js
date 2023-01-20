@@ -1,6 +1,5 @@
 import React from 'react'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
-import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 function Footer() {
