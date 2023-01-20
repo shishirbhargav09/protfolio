@@ -161,7 +161,6 @@ top: 0;
 z-index: 50;
   .nav_right {
     margin: 1rem;
-    padding-right: 4rem;
     ul {
       list-style: none;
       display: flex;
@@ -169,9 +168,9 @@ z-index: 50;
         display: none;
       }
       li {
-        margin: 0 3rem;
+        margin: 0 1rem;
         font-size: 1.2rem;
-        font-weight: 500;
+        font-weight: 400;
       }
     }
     svg {
