@@ -4,6 +4,7 @@ import img2 from "../assets/2.webp";
 import img3 from "../assets/3.webp";
 import img4 from "../assets/4.webp";
 import img5 from "../assets/5.webp";
+import img6 from "../assets/6.webp";
 
 function Projects() {
   return (
@@ -11,6 +12,24 @@ function Projects() {
       <h2>Projects</h2>
       <hr />
       <p>Here you will find some of the personal projects that I created</p>
+      <div className="project">
+        <div className="img">
+          <img src={img6} alt="project" />
+        </div>
+
+        <div className="project_desc">
+          <h3>Sociopedia</h3>
+          <p>• Its a Social Media app </p>
+          <div className="buttons">
+            <a href="https://sociopedia-shishir.vercel.app/">
+              <Button>Live Demo</Button>
+            </a>
+            <a href="https://github.com/shishirbhargav09/Sociopedia">
+              <Button>GitHub</Button>
+            </a>
+          </div>
+        </div>
+      </div>
       {/* project1 */}
       <div className="project">
         <div className="img">

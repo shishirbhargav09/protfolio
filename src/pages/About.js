@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import SkillCard from "../components/SkillCard";
+import img1 from "../assets/iet.webp";
+import img2 from "../assets/dps.webp";
+
 
 function About() {
   return (
@@ -16,7 +19,7 @@ function About() {
       <div className="education">
         <div className="college">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/4/47/Ietlogo.png"
+            src={img1}
             alt=""
           />
           <h3>
@@ -30,7 +33,7 @@ function About() {
         </div>
         <div className="school">
           <img
-            src="https://dpsbulandshahr.com/wp-content/uploads/2020/02/cropped-DPS_Bulandshahr.png"
+            src={img2}
             alt=""
           />
           <h3>DELHI PUBLIC SCHOOL YAMUNAPURAM BULANDSHAHR UP (2016-2018)</h3>
@@ -87,6 +90,12 @@ function About() {
             "https://blog.loginradius.com/static/a53096b6796dd3d1e3f3df8bc77a6689/03979/index.png"
           }
           name={"React Router"}
+        />
+        <SkillCard
+          image={
+            "https://mui.com/static/logo.png"
+          }
+          name={"Material UI"}
         />
         <SkillCard
           image={
